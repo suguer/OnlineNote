@@ -1,0 +1,18 @@
+dingo/api
+github : https://github.com/dingo/api
+
+
+route.php 路由
+
+$api = app('Dingo\Api\Routing\Router');
+$api->version('v1', function ($api) {
+    $api->any('{slug}', '\App\Http\ApiRouter@route')->where('slug', '(.*)?');
+});
+
+
+.env
+
+#Dingo API
+API_PREFIX=api
+API_VERSION=v1
+API_DEBUG=true

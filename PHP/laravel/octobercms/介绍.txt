@@ -1,0 +1,9 @@
+https://octobercms.com/
+laravel的二次开发框架
+
+
+route.php
+
+Route::group(['prefix' => 'fapi/', 'middleware' => ['web']], function () {
+	Route::any('{slug}', 'Cloud\Rent\Classes\Api\ApiRouter@route')->where('slug', '(.*)?');
+});
