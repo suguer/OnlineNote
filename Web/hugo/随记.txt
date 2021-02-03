@@ -1,1 +1,2 @@
 链接 https://www.gohugo.org/
+可配套使用 algolia 搜索
